@@ -1,0 +1,49 @@
+
+@import "bootstrap";
+
+button.btn.btn-danger a{
+	color: white;
+}
+
+button.btn.btn-primary a{
+	color: white;
+}
+
+.nav.nav-tabs{
+	background: #F8F8FF;
+	font-size: 20px;
+	color: black;
+}
+
+input[type=text] {
+    
+    border-bottom-color: #b3b3b3;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #b3b3b3;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #b3b3b3;
+    border-top-color: #b3b3b3;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+input[type=submit] {
+    border-bottom-color: #b3b3b3;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: #b3b3b3;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #b3b3b3;
+    border-top-color: #b3b3b3;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    color: white;
+    background: blue;
+}

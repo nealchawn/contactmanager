@@ -1,0 +1,37 @@
+#add custom method to routes
+   resources :contacts do
+     member do
+       get 'destroyer'
+        end
+    end
+
+#current routes
+         contacts GET    /contacts(.:format)               contacts#index
+                  POST   /contacts(.:format)               contacts#create
+      new_contact GET    /contacts/new(.:format)           contacts#new
+     edit_contact GET    /contacts/:id/edit(.:format)      contacts#edit
+          contact GET    /contacts/:id(.:format)           contacts#show
+                  PATCH  /contacts/:id(.:format)           contacts#update
+                  PUT    /contacts/:id(.:format)           contacts#update
+                  DELETE /contacts/:id(.:format)           contacts#destroy
+destroyer_contact GET    /contacts/:id/destroyer(.:format) contacts#destroyer
+                  GET    /contacts(.:format)               contacts#index
+                  POST   /contacts(.:format)               contacts#create
+                  GET    /contacts/new(.:format)           contacts#new
+                  GET    /contacts/:id/edit(.:format)      contacts#edit
+                  GET    /contacts/:id(.:format)           contacts#show
+                  PATCH  /contacts/:id(.:format)           contacts#update
+                  PUT    /contacts/:id(.:format)           contacts#update
+                  DELETE /contacts/:id(.:format)           contacts#destroy
+
+<%= link_to "Destroy All contacts", destroyer_contact_path(10000) %>
+
+     resources :contacts do
+     member do
+       post 'destroyer'
+        end
+    end
+
+    <td><%= link_to 'Show', contact %></td>
+
+    <script src="/assets/search.js" data-turbolinks-track="true"></script>

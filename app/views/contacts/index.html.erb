@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Contacts</h1>
+<h1><b>Contacts</b></h1>
+<hr>
 <label>Filter By Name: </label>
   <input type="text" id = "name" name="name" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name" >
-<table id="myTable">
+<table id="myTable" class="table table-striped">
   <thead>
     <tr>
       <th>ID </th>
@@ -26,8 +26,8 @@
         <td><%= contact.phone %></td>
         <td><%= contact.email %></td>
         <td><%= contact.created_at %></td>
-        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><button type="button" class="btn"><%= link_to 'Edit', edit_contact_path(contact) %></button></td>
+        <td><button type="button" class="btn btn-danger"><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -35,7 +35,7 @@
 
 <br>
 
-<%= link_to 'New Contact', new_contact_path %>
-<%= link_to "Destroy All contacts", destroyer_contact_path(10000) %>
+<button type="button" class="btn btn-primary"><%= link_to 'New Contact', new_contact_path %></button>
+<button type="button" class="btn btn-danger"><%= link_to "Destroy All contacts", destroyer_contact_path(10000) %></button>
 
 

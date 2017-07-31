@@ -1,5 +1,6 @@
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
+   <div class="container">
     <div id="error_explanation">
       <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
 
@@ -27,7 +28,13 @@
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
+  
+  <ul class ="nav nav-tabs">
   <div class="actions">
     <%= f.submit %>
-  </div>
+    </div>
+  </ul>
+<ul class ="nav nav-tabs">
+<%= link_to 'Back', contacts_path %></ul>
+</div>
 <% end %>
